@@ -1,6 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+
 * {box-sizing: border-box;}
 
-body, h1, h2, p, figure, links-menu {
+:root {
+    --cor-titulo: #4d4d4d;
+    --cor-texto: #333;
+    --cor-escura: #000;
+    --cor-clara: #fff;
+    --cor-intermediaria: #ececec;
+}
+
+html {
+    font-size: 16px;
+}
+
+body, h1, h2, p, figure, .links-menu {
 
     margin: 0;
     padding: 0;
@@ -8,4 +23,72 @@ body, h1, h2, p, figure, links-menu {
 }
 img {
     max-width: 100%;
+}
+
+
+body {
+    font-family: "noto sans", sans-serif ;
+    color: var(--cor-texto);
+
+}
+
+a {
+    text-decoration: none;
+}
+
+.titulo {
+    font-family: "Raleway", sans-serif ;
+    text-transform: uppercase;
+    font-weight: 800;
+    font-size: 1,5rem;
+}
+
+.titulo a {
+    background-color:  var(--cor-escura);
+    color: var(--cor-clara);
+    padding: 0.3rem 1rem;
+    border-radius:  4px; ;
+}
+
+.topo {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+.titulo-menu a {
+    color: var(--cor-escura);
+    font-size: 1.2rem;
+    padding: 1rem;
+    background-color: yellow;
+    display: inline-block;
+    
+}
+
+.menu a:hover {
+    background-color: var(--cor-intermediaria);
+}
+.links-menu {
+    list-style: none;
+    display: none;
+}
+
+.links-menu a {
+    color: var(--cor-escura);
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+}
+
+.links-menu.aberto {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    left: 0;
+    right: 0;
+    background-color: var(--cor-clara);
+
 }
