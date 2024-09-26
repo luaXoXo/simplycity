@@ -61,7 +61,7 @@ a {
     color: var(--cor-escura);
     font-size: 1.2rem;
     padding: 1rem;
-    background-color: yellow;
+    background-color: var(--cor-clara);
     display: inline-block;
     
 }
@@ -91,4 +91,15 @@ a {
     right: 0;
     background-color: var(--cor-clara);
 
+}
+
+.destaque  {
+    background-image: url(/imagens/fundo-destaque.jpg);
+    color: var(--cor-clara);
+    text-align: center;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 70vh;
 }
