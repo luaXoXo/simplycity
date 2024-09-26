@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variaveis no CSS</title>
+    <style>
+        :root {
+
+            --cor: orange;
+            --bordaarredondada: 4px 8px 12px 6px;
+            --corfundo: linear-gradient(black,red);
+        }
+
+        h1 {
+             color: var(--cor);
+        border-radius: var(--bordaarredondada);
+        background: var(--corfundo);
+    }
+        h2 { border: solid var(--cor) 2px;}
+        p {text-shadow: var(--cor) 2px 2px 5px;}
+    </style>
+</head>
+<body>
+    <h1>usando variaveis no css</h1>
+    <hr>
+
+    <h2>front-end</h2>
+    <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Porro, modi!
+    </p>
+    <h2>back-end</h2>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Porro, modi!</p>
+</body>
+</html>
