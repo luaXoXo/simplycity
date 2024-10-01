@@ -136,7 +136,7 @@ a {
 
 
 article h2 {
-    font-size: 1rem;
+    font-size: 1.4rem;
     font-family: "ralaway", sans-serif;
     color: var(--cor-titulo);
 }
@@ -156,5 +156,46 @@ article address {
 }
 
 .front-end, .historia, .localizacao {
-text-align: center;
+    text-align: center;
 }
+
+.historia {
+    background-image: url(/imagens/fundo-madeira.jpg);
+    background-size: cover;
+    background-attachment: fixed ;
+    
+}
+
+.historia h2 {
+    color: var(--cor-clara);
+    text-shadow: rgb(163, 0, 0) 2px 2px 10px;
+    
+    
+}
+
+.historia iframe {
+    max-width: 700px;
+    width: 100%;
+    margin-bottom: 2rem;
+
+}
+
+.localizacao iframe {
+    width: 100%;
+    margin-top: 2rem;
+}
+
+.rodape {
+    background-color: var(--cor-escura);
+    color: var(--cor-clara);
+    text-align: center;
+    display: flex;
+    font-weight: bold;
+    justify-content: center;
+    align-items: center;
+    height: 30vh;
+
+    
+    
+}
+
