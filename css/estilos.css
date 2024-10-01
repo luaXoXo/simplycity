@@ -103,3 +103,25 @@ a {
     justify-content: center;
     height: 70vh;
 }
+
+@keyframes animadestaque {
+
+    from { 
+        opacity: 0; 
+        transform:scale(0.5);
+    
+    }
+
+    to { 
+        opacity: 1;
+        transform: scale(1) ;
+    
+    }
+}
+
+.destaque h2, .destaque p {
+    animation-name: animadestaque;
+    animation-duration: 2s;
+
+   
+}
