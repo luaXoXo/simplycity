@@ -122,6 +122,39 @@ a {
 .destaque h2, .destaque p {
     animation-name: animadestaque;
     animation-duration: 2s;
+    color: var(--cor-clara);
 
    
+}
+
+.destaque h2 {
+    font-size: clamp( 3rem, 10vw, 7rem);
+}
+.destaque p {
+    font-size: clamp( 1.5rem, 3vw, 3rem);
+}
+
+
+article h2 {
+    font-size: 1rem;
+    font-family: "ralaway", sans-serif;
+    color: var(--cor-titulo);
+}
+
+
+article p {
+    padding: 0.5rem 0;
+    font-size: 1.2rem;
+
+} 
+
+
+
+article address {
+    font-style: normal;
+    font-size: 1.2rem;
+}
+
+.front-end, .historia, .localizacao {
+text-align: center;
 }
