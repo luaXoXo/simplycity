@@ -210,3 +210,65 @@ article address {
     font-size: 1.8rem;
     border-bottom: solid 1px;
 }
+
+table {
+    border: solid 4px var(--cor-escura);
+    width: 80%;
+    max-width: 600px;
+    margin: auto;
+    border-collapse: collapse;
+    
+}
+
+caption {
+    text-transform: uppercase;
+    font-size: 1,2rem;
+    padding-bottom: 0.3rem;
+    border: solid 4px var(--cor-escura);
+    background-color: var(--cor-intermediaria);
+    color: var(--cor-escura);
+}
+
+th, td {
+    border: solid 1px var(--cor-escura);
+}
+
+th {
+    background-color: green;
+    color: var(--cor-clara);
+    padding: 0.5rem;
+}
+
+td {
+    padding: 0,4rem;
+}
+
+td:nth-child(2) {
+    text-align: center;
+}
+
+
+td:last-child, th:last-child {
+    text-align: right;
+}
+
+tr:nth-child(2){
+    background-color: blue;
+    color: var(--cor-clara);
+}
+
+tr:nth-child(odd){
+    background-color: yellow;
+    color: #000000;
+}
+
+tr:last-child {
+    background-color: green;
+    color: var(--cor-clara)
+}
+
+.limitador {
+    width: 95vw;
+    max-width: 1000px;
+    margin: auto;   
+}
