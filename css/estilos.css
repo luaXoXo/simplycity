@@ -52,8 +52,24 @@ a {
 
 .topo {
     display: flex;
-    justify-content: space-around;
     align-items: center;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    background-color: var(--cor-clara);
+    
+}
+
+.topo .limitador {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.limitador {
+    width: 95vw;
+    max-width: 1000px;
+    margin: auto;   
 }
 
 
@@ -234,7 +250,7 @@ th, td {
 }
 
 th {
-    background-color: green;
+    background-color: var(--cor-escura);
     color: var(--cor-clara);
     padding: 0.5rem;
 }
@@ -252,23 +268,50 @@ td:last-child, th:last-child {
     text-align: right;
 }
 
-tr:nth-child(2){
-    background-color: blue;
-    color: var(--cor-clara);
+tr:nth-child(even){
+background-color: #4d4d4d;
+color: var(--cor-clara);
 }
 
 tr:nth-child(odd){
-    background-color: yellow;
-    color: #000000;
+    background-color: rgb(73, 73, 71);
+    color: var(--cor-clara);
 }
 
-tr:last-child {
-    background-color: green;
-    color: var(--cor-clara)
+
+
+.grade  {
+    display: grid ;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 45px;
+    justify-items: center;
+    padding-right: 100px;
+    padding-left: 100px;
 }
 
-.limitador {
-    width: 95vw;
-    max-width: 1000px;
-    margin: auto;   
+.circulo {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 2px solid #ddd;
+            max-width: max-content;
+            box-shadow: #000 5px 5px 10px;
+
 }
+
+
+
+
+@keyframes animagrade
+
+
+.circulo img:hover {
+    transform: rotate(1s), scale(1s);
+    transition: 1s;
+}
+
+
