@@ -298,7 +298,7 @@ form {
 label {
     font-size: 0.9rem;
     font-weight: bold;
-    color: var(--cor-texto;)
+    color: var(--cor-texto);
 
 }
 
@@ -344,7 +344,7 @@ button:hover, button:focus {
 .links-menu { display: flex;}
  
 .menu{
-    background-color: yellow;
+    background-color: white;
     width: 60%;
 }
  
